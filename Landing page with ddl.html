@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page using html css</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown button */
+        .dropbtn {
+            background-color: #4CAF50;
+            color: rgb(227, 227, 227);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #b11818;}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                DETECTIVE COMICS
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">DC COMICS</a>
+                <a href="#">Read Now</a>
+
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <button class="dropbtn">Explore COMICS</button>
+                    <div class="dropdown-content">
+                        <a href="#">Top Comics</a>
+                        <a href="#">Batman</a>
+                        <a href="#">Superman</a>
+                        <a href="#">Wonder women</a>
+                        <a href="#">Flash</a>
+                        <a href="#">Cyborg</a>
+                        <a href="#">Aquaman</a>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="Sign Up">
+                <a href="#">Sign Up</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <span>Step Into The SHADOWS</span>
+            <h1>Explore the DC Universe</h1>
+            <br>
+            <a href="#">Login</a>
+        </section>
+    </header>
+</body>
+</html>
